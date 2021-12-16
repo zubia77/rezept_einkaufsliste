@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+
+}
+body{
+   background-color: rgba(247, 232, 232, 0.719);
+    font-size: 1.6rem;
+    width: 100%;
+    }
+
+
+:root{
+    font-size: 62.5%;
+    font-family: sans-serif;
+    display: flex;
+   
+}
+.logo {
+    background-color: blue;
+    padding: 1rem;
+}
+
+img{  
+   border-radius: 50%;
+   width: 5rem;
+    height: 5rem;
+ }
+
+header{
+    
+}
+
+header h1{
+    text-align: center;
+    text-decoration: underline rgb(32, 31, 32);
+    font-family: monospace;
+    text-shadow: rebeccapurple 5px 1px 3px ;
+    
+}
+h2{
+    text-decoration: underline;
+    font-family:monospace;
+}
+.card1{
+   
+        display: grid;
+        grid-template-columns: minmax(200px, 400px);
+        grid-template-rows: repeat(8, 300px );
+        grid-gap: 3em;
+        padding: 0 2rem;
+        margin-top: 3em;
+        
+        
+    
+}
+
+ul{
+    list-style-type: none;
+}
+li{
+    
+    padding: 0.6rem;
+}
+input[type=checkbox]
+{
+margin-right: 0.5rem;
+}
+.grün{
+    background-color: rgba(106, 214, 106, 0.452);
+}
+.blue{
+    background-color: rgba(79, 79, 209, 0.561);
+}
+main > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.notiz{
+    
+    padding: 0 2rem;
+   margin: 3em 0;
+}
+
+.notiz h2{
+    text-align: center;
+    padding-bottom: 2em;
+}
+.notiz li::after{
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 2px;
+    background-color: black;
+    
+    
+}
+.notiz li{
+    position: relative;
+    padding: 2rem;
+    
+}
+.notiz ul{
+    list-style:disc;
+    
+}
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 500px ) {
+
+.card1{
+    grid-template-columns: repeat(2, minmax(200px, 400px));
+    grid-template-rows: repeat(4, 300px );
+}
+}
+
+@media  screen and (min-width: 913px ) {
+    .card1{
+        grid-template-columns: repeat(3, minmax(200px, 400px));
+        grid-template-rows: repeat(4, 300px );
+    }
+}
+@media  screen and (min-width: 1280px ) {
+    .card1{
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 300px );
+    }
+}
+
+
+
