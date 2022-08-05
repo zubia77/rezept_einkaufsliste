@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="rezepte">
+  <link rel="stylesheet" href="style.css">
+  <script
+    src="https://kit.fontawesome.com/3eec0028da.js"
+    crossorigin="anonymous">
+  </script>
+  <style>
+    @import url("http://fonts.cdnfonts.com/css/samarkan");
+    @import url("https://fonts.googleapis.com/css2?family=Lobster&family=Maven+Pro:wght@400;600&display=swap");
+  </style>
+  <title>Desi Handi</title>
+</head>
+
+<body>
+
+    <section class="zubi">
+
+        <header class="zubheader">
+
+            <div class="zublogo">
+              <img src="images_zubi/pngwing.com (5).png" alt="" />
+            </div>
+    
+            <div class="zubtitle"><h4>Desi Handi</h4></div>
+
+          </header>  
+
+          <main>
+            <div class="cont2_img"></div>
+            <div class="text">
+                <h2>Du möchtest dein Rezept mit uns teilen oder vielleicht ein Bild deines Gerichts hochladen? ... Dann lade doch einfach deine Rezepte und Bilder hoch!</h2>
+            </div>
+
+            <br><br>
+
+            <form class="form" action="https://formspree.io/f/mbjwjpga" method="POST">
+
+          <fieldset>
+              <legend>Kontakt-Infos</legend>
+              <label for="firstname">Vorname</label>
+                        <input type="text" name="firstname" id="firstname" /><br>
+                        <label for="lastname">Nachname</label>
+                        <input type="text" name="lastname" id="lastname" /><br><br>
+                        <label for="email">Email</label>
+                        <input class="email" type="email" name="email" id="email" placeholder="gebe hier deine Emailadresse ein" />
+          </fieldset>
+  <br>
+          <fieldset>
+
+                 <legend>Lade hier deine Dateien hoch</legend>
+                 <label for="id-reference">Kategorie</label>
+                
+                 <select id="id-category" name="category">
+                    <option >... Bitte auswählen</option>
+                    <option value="Hauptgericht" >Hauptgericht</option>
+                    <option value="snacks">Snacks</option>
+                    <option value="beilagen">Beilagen</option>
+                    <option  value="dessert">Desseret</option>
+                    <option value="drinks">Getränke</option>
+                    <option value="tipps">Tipps & Tricks</option>
+                 </select>
+                 <br><br>
+                 <label>Wählen Sie die hoch zu ladenden Dateien von Ihrem Rechner aus:
+                    <input class="datei"name="datei[]" type="file" multiple> 
+                  </label>  
+                  <br><br>
+                  <button>Hochladen</button>
+             </fieldset>
+             <fieldset>
+                 <legend>Du möchtest uns etwas mitteilen?</legend>
+                 <textarea name="message" rows="10" cols="30" placeholder="schreibe uns..."></textarea>
+
+             </fieldset>
+             <fieldset>
+              <input class="haken" type="checkbox" id="newsletter" name="newsletter" value="newsletter" checked/>
+              <label class="checkbox" for="newsletter">Ich wünsche ein Newsletter</label>
+              <br>
+             <button>Abschicken</button>
+             <br>
+            <button type="reset">Reset</button>    
+
+             </fieldset>
+            
+            </form>
+
+          </main>
+
+          <footer class="formfooter">
+            <div class="lefti">
+              <i class="fab fa-instagram"></i>
+              <i class="fab fa-pinterest-p"></i>
+              <i class="fab fa-facebook-f"></i>
+            </div>
+    
+            <div class="rightform">
+              <i class="far fa-envelope"></i>
+              <i class="fas fa-at"></i>
+              <i class="fas fa-phone-alt"></i>
+            </div>
+          </footer>
+    </section>
+</body>
+</html>

@@ -1,0 +1,344 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    /* border: 2px solid yellow; */
+}
+:root{
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.6rem;
+    width: 100%;
+}
+.zubi{
+    background-color: #96BB7C;
+}
+    .zubheader{
+    width: 100%;
+    height:150px;
+    background-color: #184D47;
+    font-family: Samarkan, sans-serif;
+    color: #927515;
+    display: grid;
+    grid-template-areas:". . . ."
+                        ". zublogo . ."
+                        ". zublogo . zubtitle";
+    grid-template-columns: 5px 150px 1rem 1fr;
+    grid-template-rows: 1px 1fr 1fr 10px;
+    gap: 1rem;
+}
+
+.zublogo{
+    grid-area: zublogo;
+    transform: rotate(-25deg);
+}
+
+.zubtitle{
+    grid-area: zubtitle;
+    font-size: 3em;
+}
+.cont2_img{
+    background-image: url(images_zubi/bortegoldtrsca.png);
+    background-repeat: repeat-x;
+    background-color: #184D47;
+    width: 100%;
+    height: 50px;
+}
+.search{
+    width: 100%;
+    font-family: Lobster,sans-serif;
+    color: #184D47;
+    font-size: 3rem;
+    text-align: center;
+    background-color: #C64756;
+    padding: 1rem;
+}
+#suche {
+    border: 2px solid #927515;
+    border-radius: 2rem;;
+    font-size: 2rem;
+    width: 30rem;
+    height: 5rem;
+    transition: width 0.5s ease-in-out;   
+}
+.search2{
+    display: none;
+}
+
+.rezepte{
+    display: flex;
+    flex-direction: column;
+    margin:2rem;
+    gap: 1rem;
+    width: 90%;
+    
+}
+
+.aktuell{
+    height: 250px;
+    background-image: url(images_zubi/christmas.jpg);
+    background-size: cover; 
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: flex-start;
+    border: 5px solid #927515;
+    box-shadow: rgb(73, 73, 73) 5px 5px 5px;
+    border-radius: 20px;
+}
+.h2akt{
+    color: #e7e3e3;
+    font-family: Samarkan, sans-serif;
+    font-size: 4rem;
+    -webkit-text-stroke:2px #927515;
+}
+.hauptspeise{
+    height: 250px;
+    background-image: url(images_zubi/hauptspeise.jpg);
+    background-size: cover; 
+    border: 5px solid #927515;
+    box-shadow: rgb(73, 73, 73) 5px 5px 5px;
+    border-radius: 20px;
+} 
+.h2hs{
+    color: #440a10;
+    font-family: Samarkan, sans-serif;
+    font-size: 3.5rem;
+    -webkit-text-stroke:2px #927515;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+.appetizer{
+    height: 250px;
+    background-size: cover; 
+    background-image: url(images_zubi/appetizer.jpeg);
+    border: 5px solid #927515;
+    box-shadow: rgb(73, 73, 73) 5px 5px 5px;
+    border-radius: 20px;
+}
+.h2app{
+    color: #17442c;
+    font-family: Samarkan, sans-serif;
+    font-size: 7rem;
+    -webkit-text-stroke:2px #927515;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.beilagen{
+    height: 250px;
+    background-size: cover;
+    background-image: url(images_zubi/naan.jpg);
+    border: 5px solid #927515;
+    box-shadow: rgb(73, 73, 73) 5px 5px 5px;
+    border-radius: 20px;
+}
+.h2naan{
+    color: #167e6c;
+    font-family: Samarkan, sans-serif;
+    font-size: 5rem;
+    font-weight: bold;
+    -webkit-text-stroke:2px #927515;
+    display: flex;
+
+}
+.dessert{
+    height: 250px;
+    background-size:cover;
+    background-image: url(images_zubi/dessert.jpeg);
+    border: 5px solid #927515;
+    box-shadow: rgb(73, 73, 73) 5px 5px 5px;
+    border-radius: 20px;
+    
+}
+.h2dess{
+    color: #753a18;
+    font-family: Samarkan, sans-serif;
+    font-size: 5rem;
+    -webkit-text-stroke:2px #927515;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+
+}
+.drinks{
+    height: 250px;
+    background-size: cover;
+    background: url(images_zubi/drinks.jpg);
+    border: 5px solid #927515;
+    box-shadow: rgb(73, 73, 73) 5px 5px 5px;
+    color: #19a831;
+    font-family: Samarkan, sans-serif;
+    font-size: 3rem;
+    -webkit-text-stroke:2px #927515;
+    border-radius: 20px;
+    
+}
+.tipps{
+    height: 250px;
+    background-size: cover;
+    background-image: url(images_zubi/tippstricks.jpg);
+    border: 5px solid #927515;
+    box-shadow: rgb(73, 73, 73) 5px 5px 5px;
+    color: #19a85c;
+    font-family: Samarkan, sans-serif;
+    font-size: 3rem;-webkit-text-stroke:2px #927515;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 20px;
+}
+.gul{
+    border: 5px solid #927515;
+    box-shadow: rgb(73, 73, 73) 5px 5px 5px;
+    background-color:rgba(0, 0, 255, 0.486);
+    padding: 20px;
+    font-family: Lobster, sans-serif;
+    font-size: 3rem;
+    text-align: center;
+    color: white;
+    border-radius: 20px;
+}
+.gullog{
+    margin-top: 1rem;
+    text-align: center;
+    border-radius: 50%;;
+}
+.footerz{
+    width: 100%;
+    height: 200px;
+    background-color: #184D47;
+    color: #927515;
+    display: grid;
+    grid-template-areas: ". . . . "
+                        ". mid mid mid "
+                        ". . . . "
+                        ". lefti . righto "
+                        ". . . . ";
+    grid-template-columns:15px 1fr 1fr 1fr ;
+    grid-template-rows:15px 1fr 2fr 1fr;
+    gap: 0.5rem;
+}
+.mid{
+    width: 95%;
+    border: 5px solid #927515;
+    grid-area: mid;
+    background-color: #C64756;
+    color: #17442c;
+    font-family: Lobster, sans-serif;
+    font-size: 2.5rem;
+    justify-content: center;
+    text-align: center;
+}
+.lefti{
+    grid-area: lefti;
+}
+.righto{
+    grid-area: righto;
+    
+}
+.text{
+    color: #17442c;
+    font-family: Lobster, sans-serif;
+    font-size: 1rem;
+    font-weight: lighter;
+    text-align: center;
+}
+.form{
+    color: #17442c;
+    font-family: Lobster, sans-serif;
+    font-size: 2rem;
+}
+.text{
+    font-size: 2rem;
+}
+fieldset{
+    
+    border: #17442c 2px solid;
+    padding: 1rem;
+    margin: 2rem;
+    display: grid;
+}
+input{
+    width: 300px;
+    height: 3rem;
+    margin-top: 1rem;
+    font-family: Lobster, sans-serif;
+    font-size: 3rem;
+}
+.email{
+    font-size: 2rem;
+}
+
+.datei{
+    font-size: 2rem;
+
+}
+button{
+    font-size: 2rem;
+}
+.checkbox{
+    margin-left: 4rem;
+    margin-top: -2.5rem;
+}
+.haken{
+    width: 2.5rem;
+}
+.formfooter{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 2rem;
+}
+i{
+    margin: 0.5rem;
+}
+
+@media screen and (min-width:768px){
+    .zubi{
+        width: 100%;
+        /* margin-right: -4rem */
+    }
+    .rezepte{
+        margin-left: 3.5rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    .appetizer{
+        background-size: cover;
+       
+    }  
+    .drinks{
+        background-size: cover;
+        background-repeat: no-repeat;
+    }  
+    .mid{
+        width: 700px;
+        margin-left: 1.5rem;
+    }
+    
+}
+@media screen and (min-width:1024px){
+    .search{
+        display: none;
+    }
+    .zubheader{
+        grid-template-areas:". . . . . ."
+                        ". zublogo . . . ."
+                        ". zublogo . zubtitle . search2";
+    grid-template-columns: 50px 150px 1fr 1fr 300px 1fr;
+    grid-template-rows: 1px 1fr 1fr 10px;
+    }
+    .search2{
+        display: block;
+        grid-area: search2;
+    }
+    .zubtitle{
+        font-size: 9rem;
+    }
+    .suchrez{
+        font-size: 4rem;
+    }
+
+    
+}
